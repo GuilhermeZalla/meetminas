@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body onload="updateDate()">
     <header id="home">
         <nav class="navbar">
             <div class="navbar-header">
@@ -83,7 +83,7 @@
         <!-- sobre -->
     </section>
     <section id="diferenciais">
-        <h2 class="section_title mb-2">Nossos<span class="section_title--special"> diferenciais</span></h2>
+        <h2 class="section_title section_title--diferenciais mb-2">Nossos <span class="section_title--special">diferenciais</span></h2>
         <div class="diferenciais">
             <article class="diferencial">
                 <h3 class="diferencial_titulo diferencial_titulo--carteira">O melhor preço</h3>
@@ -238,25 +238,25 @@
     <section class="footer">
         <div class="footer-navbar">
             <ul class="footer-list">
-                <li class="footer-list_item pr-2">Home</li>
-                <li class="footer-list_item pr-2">Sobre nós</li>
-                <li class="footer-list_item pr-2">Serviços</li>
-                <li class="footer-list_item pr-2">Pacotes</li>
-                <li class="footer-list_item pr-2">Galeria</li>
-                <li class="footer-list_item pr-2">Ofertas</li>
+                <li class="footer-list_item pr-2"><a class="footer-list_link" href="#home">Home</a></li>
+                <li class="footer-list_item pr-2"><a class="footer-list_link" href="#sobre">Sobre nós</a></li>
+                <li class="footer-list_item pr-2"><a class="footer-list_link" href="#diferenciais">Diferenciais</a></li>
+                <li class="footer-list_item pr-2"><a class="footer-list_link" href="#pacotes">Pacotes</a></li>
+                <li class="footer-list_item pr-2"><a class="footer-list_link" href="#galeria">Galeria</a></li>
+                <li class="footer-list_item pr-2"><a class="footer-list_link" href="">Ofertas</a></li>
             </ul>
             <ul class="footer-list_icons">
                 <li class="footer-list_icons--item">
                     <a class="special-color" href="https://www.twitter.com" target="_blank" rel="external" hreflang="pt-br"> <i class="fab fa-twitter"></i></a>
                 </li>
-                <li>
+                <li class="footer-list_icons--item">
                     <a class="special-color" href="https://www.facebook.com" target="_blank" rel="external" hreflang="pt-br"> <i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
+                </li class="footer-list_icons--item">
+                <li class="footer-list_icons--item">
                     <a class="special-color" href="https://www.instagram.com" target="_blank" rel="external" hreflang="pt-br"> <i class="fab fa-instagram"></i></a>
                 </li>
             </ul>
-            <h2>Coyright&copy; meetminas 2021. Todos os direitos reservados.</h2>
+            <h2>Coyright&copy; meetminas <span id="date-update"></span>. Todos os direitos reservados.</h2>
         </div>
     </section>
     <script src="js/scripts.js"></script>
